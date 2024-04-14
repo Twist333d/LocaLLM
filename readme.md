@@ -44,4 +44,29 @@ Before you begin, ensure you have the following installed:
 ### Running the Application
 
 Once the setup is complete, you can start the application using:
+python main.py
+
+#### Switching to a different PC
+# Open a command prompt or PowerShell window
+
+# Step 1: Check if Python is installed
+python --version
+# or `python3 --version` depending on your configuration
+
+# Step 2: Clone the repository
+git clone https://github.com/yourusername/locaLLM-chat.git
+cd locaLLM-chat
+
+# Step 3: Create a virtual environment
+python -m venv venv
+
+# Step 4: Activate the virtual environment
+.\venv\Scripts\activate
+
+# Step 5: Install dependencies
+pip install -r requirements.txt
+
+# Step 6: Run the application
+python main.py
+
 
