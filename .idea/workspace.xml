@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bdfb8be-bad6-4e50-adcc-f21bc8f0c242" name="Changes" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm-chat/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm-chat/formatting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm-chat/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm-chat/network.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm-chat/chat_app.py" afterDir="false" />
-    </list>
+    <list default="true" id="9bdfb8be-bad6-4e50-adcc-f21bc8f0c242" name="Changes" comment="Updating the project file structure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +57,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/llm-chat" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="LLMChat" />
@@ -267,7 +264,7 @@
       <updated>1712859816689</updated>
       <workItem from="1712859818347" duration="5997000" />
       <workItem from="1712899611490" duration="9015000" />
-      <workItem from="1713093765041" duration="2039000" />
+      <workItem from="1713093765041" duration="2169000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -285,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713098463255</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updating the project file structure">
+      <option name="closed" value="true" />
+      <created>1713099508060</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713099508060</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +299,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="Updating the project file structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating the project file structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
