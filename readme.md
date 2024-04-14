@@ -1,16 +1,47 @@
-# Chat Application
+# LocaLLM Chat Application
 
-This project is a simple chat application built with PyQt5, integrating OpenAI's API to send and receive messages.
+This is a chat application that integrates with OpenAI's API to provide conversational capabilities, built using Python and PyQt5.
 
-## Features
+## Getting Started
 
-- Chat interface with OpenAI's API.
-- Text formatting features such as bold, code, and bullet points.
-- Modular design for easy maintenance and scalability.
+### Prerequisites
 
-## Installation
+Before you begin, ensure you have the following installed:
+- Python 3.6 or higher
+- pip (Python package manager)
 
-Ensure you have Python and PyQt5 installed. Install the necessary packages with:
+### Installation
 
-```bash
-pip install pyqt5 requests markdown
+1. **Clone the Repository**
+
+    ```
+    git clone https://github.com/yourusername/locaLLM-chat.git
+    cd locaLLM-chat
+    ```
+
+2. **Set Up a Virtual Environment**
+
+    - For Windows:
+        ```
+        python -m venv venv
+        venv\Scripts\activate
+        ```
+
+    - For macOS and Linux:
+        ```
+        python3 -m venv venv
+        source venv/bin/activate
+        ```
+
+3. **Install Dependencies**
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+    This will install all the necessary packages for the project.
+
+### Running the Application
+
+Once the setup is complete, you can start the application using:
+
