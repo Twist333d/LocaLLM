@@ -2,6 +2,7 @@ import sys
 import os
 from datetime import datetime
 
+import markdown
 from PyQt5.QtCore import QThread, pyqtSignal, Qt, QEvent, QTimer
 from PyQt5.QtGui import QFont, QTextCursor, QColor, QTextBlockFormat, QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QPushButton, QTextEdit, QWidget, \
@@ -15,7 +16,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 urllib3.disable_warnings(urllib3.exceptions.NotOpenSSLWarning)
 
 class Worker(QThread):
-    finished = pyqtSignal(str, bool)  # Emit message content and a boolean for success
+    finished = pyqtSignal(str, bool)  # Emit message content (as HTML) and a boolean for success
     error = pyqtSignal(str)
 
     def __init__(self, prompt):
@@ -25,7 +26,9 @@ class Worker(QThread):
     def run(self):
         response, success = self.call_openai_api(self.prompt)
         if success:
-            self.finished.emit(response, True)
+            # Convert Markdown to HTML here, so QTextEdit can render it properly
+            html_content = markdown.markdown(response, extensions=['fenced_code', 'tables'])
+            self.finished.emit(html_content, True)
         else:
             self.finished.emit(response, False)
 
